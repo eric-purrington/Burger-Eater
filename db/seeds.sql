@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name) VALUES ("Deluxe Dick's Burger"), ("Sonic Burger"), ("In'N'Out Double-Double");
