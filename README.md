@@ -2,7 +2,7 @@
 A simple full stack application operating on a MVC design pattern.
 
 
-![Gif Demonstration](public\assets\img\burgerEater.gif)
+![Gif Demonstration](/public/assets/img/burgerEater.gif)
 
 ## Table of Contents 
 
