@@ -1,39 +1,54 @@
-<h1>Burgers</h1>
+<h1>Burger Eater</h1>
 
-<h2>Burgers to devour</h2>
+<img src = "/assets/img/burger.jpg" alt = "close-up burger">
 
-<ul>
-    {{#each burgers}}
-        {{#unless devoured}}
-            <li>{{burger_name}}
-                <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		        {{#if devoured}}I'll have another{{else}}Devour That Burger{{/if}}
-	            </button>
-            </li>
-        {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Burgers devoured</h2>
-
-<ul>
-    {{#each burgers}}
-        {{#if devoured}}
-            <li>{{burger_name}}
-                <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		        {{#if devoured}}I'll have another{{else}}Devour That Burger{{/if}}
-	            </button>
-            </li>
-        {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a burger to devour</h2>
-
-<form class = "create-form">
-    <div class = "form-group">
-        <label for = "burger_name">Burger Name:</label>
-        <input type = "text" id = "burger_name" name = "name">
+<div class = "container">
+    <div class = "row justify-content-center">
+        <div class = "col-4">
+            <h2>Add a burger</h2>
+            <div class = "formCenter">
+                <form class = "create-form">
+                    <div class = "form-group">
+                        <input type = "text" id = "burger_name" name = "name" placeholder = "Sonic Burger etc.">
+                    </div>
+                    <button id = "createBurger" type = "submit">Add burger</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <button id = "createBurger" type = "submit">Add burger</button>
-</form>
+    <h3 class = "sum"></h3>
+    <div class = "row justify-content-around">
+        <div class = "col-4">
+            <h2>Burgers to Devour</h2>
+            <ul class = "devourableList">
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        <li><i class="fas fa-hamburger"></i> {{burger_name}}
+                            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		                    {{#if devoured}}Another!{{else}}Devour it!{{/if}}
+	                        </button>
+                        </li>
+                    {{/unless}}
+                {{/each}}
+                <li>Perhaps branch out...</li>
+            </ul>
+        </div>
+        <div class = "col-4">
+            <h2>Burgers Devoured</h2>
+            <ul class = "devouredList">
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li><i class="fas fa-hamburger"></i> {{burger_name}}
+                            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		                    {{#if devoured}}Another!{{else}}Devour it!{{/if}}
+	                        </button>
+                        </li>
+                    {{/if}}
+                {{/each}}
+                <li>You're looking awfully hungry...</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class = footer></div>
