@@ -35,7 +35,7 @@ Finally, run the schema.sql and seeds.sql files in MySql to create the database.
 
 ## Usage
 
-Go to the [Burger-Eater]() to see for yourself.
+Go to the [Burger-Eater](https://ep-burger-eater.herokuapp.com/) to see for yourself.
     
 
 ## Technologies
