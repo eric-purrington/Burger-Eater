@@ -42,7 +42,7 @@ Go to the [Burger-Eater]() to see for yourself.
 ## Technologies
                            
 - [Node.js](https://nodejs.org/)                                               
-- [MySql (npm package)](https://www.npmjs.com/package/mysql)
+- [MySql](https://www.mysql.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Express](https://expressjs.com/)
 - [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
