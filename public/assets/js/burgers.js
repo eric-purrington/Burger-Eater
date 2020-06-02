@@ -4,8 +4,10 @@ $(function () {
   } else {
     burgerSum = 0;
   }
-  
-  if (burgerSum == 1) {
+
+  if (burgerSum == 0) {
+    $(".sum").html("You've eaten " + burgerSum + " burgers! Want one?");
+  } else if (burgerSum == 1) {
     $(".sum").html("You've eaten " + burgerSum + " burger! Want another?");
   } else {
     $(".sum").html("You've eaten " + burgerSum + " burgers! Want another?");
